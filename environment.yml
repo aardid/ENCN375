@@ -1,0 +1,11 @@
+name: sea_level_rise
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - geopandas
+  - matplotlib
+  - numpy
+  - ipywidgets
+  - jupyterlab
