@@ -5,10 +5,14 @@ import numpy as np
 from shapely.geometry import Polygon, MultiPolygon
 #
 def plot_map_full(zoom=False,coords = None):
-    contour_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Contour_NB.shp'
-    coastline_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
-    roads_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
-    marae_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
+    #contour_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Contour_NB.shp'
+    #coastline_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
+    #roads_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
+    #marae_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
+    contour_file = r'.\data_test2\NB_shapes\NB_Contour_NB.shp'
+    coastline_file = r'.\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
+    roads_file = r'.\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
+    marae_file = r'.\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
 
     contour = gpd.read_file(contour_file)
     roads = gpd.read_file(roads_file)
