@@ -71,10 +71,14 @@ def load_int():
     #coastline_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
     #roads_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
     #marae_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
-    contour_file = r'.\data_test2\NB_shapes\NB_Contour_NB.shp'
-    coastline_file = r'.\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
-    roads_file = r'.\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
-    marae_file = r'.\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
+    #contour_file = r'.\data_test2\NB_shapes\NB_Contour_NB.shp'
+    #coastline_file = r'.\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
+    #roads_file = r'.\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
+    #marae_file = r'.\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
+    contour_file = r'NB_Contour_NB.shp'
+    coastline_file = r'NB_Coastline_LINZ.shp'
+    roads_file = r'NB_nz_road_centrelines_topo_150k.shp'
+    marae_file = r'NB_Marae_NB_UTM.shp'
     
     contour = gpd.read_file(contour_file)
     roads = gpd.read_file(roads_file)
@@ -138,7 +142,7 @@ def plot_map_full_sea_level_int_button(contour, coastline, roads, marae):
         min=0,     # Minimum sea level rise
         max=4,     # Maximum sea level rise
         step=1,    # Step size for slider
-        description='Sea Level (m):',
+        description='Sea Level + tides (m):',
         continuous_update=False
     )
 
@@ -224,7 +228,7 @@ def plot_map_full_sea_level_int_button_eco_loss(contour, coastline, roads, marae
         min=0,     # Minimum sea level rise
         max=4,     # Maximum sea level rise
         step=1,    # Step size for slider
-        description='Sea Level (m):',
+        description='Sea Level + tides (m):',
         continuous_update=False
     )
 
@@ -349,7 +353,7 @@ def mitigation_strategy_sidebar():
         min=1,     # Minimum sea level rise
         max=3,     # Maximum sea level rise
         step=0.5,  # Step size for slider
-        description='Sea Level (m):',
+        description='Sea Level + tides (m):',
         continuous_update=False
     )
 

@@ -9,10 +9,14 @@ def plot_map_full(zoom=False,coords = None):
     #coastline_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
     #roads_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
     #marae_file = r'C:\Temp\UC_teaching_notebook\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
-    contour_file = r'.\data_test2\NB_shapes\NB_Contour_NB.shp'
-    coastline_file = r'.\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
-    roads_file = r'.\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
-    marae_file = r'.\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
+    #contour_file = r'.\data_test2\NB_shapes\NB_Contour_NB.shp'
+    #coastline_file = r'.\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
+    #roads_file = r'.\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
+    #marae_file = r'.\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
+    contour_file = r'NB_Contour_NB.shp'
+    coastline_file = r'NB_Coastline_LINZ.shp'
+    roads_file = r'NB_nz_road_centrelines_topo_150k.shp'
+    marae_file = r'NB_Marae_NB_UTM.shp'
 
     contour = gpd.read_file(contour_file)
     roads = gpd.read_file(roads_file)
@@ -127,10 +131,14 @@ def create_sea_level_mask(contour, sea_level):
 
 def plot_map_full_sea_level(sea_level, zoom=False):
     # File paths (update these based on your environment)
-    contour_file = r'C:\Temp\UC_interv_teaching_seminar\data_test2\NB_shapes\NB_Contour_NB.shp'
-    coastline_file = r'C:\Temp\UC_interv_teaching_seminar\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
-    roads_file = r'C:\Temp\UC_interv_teaching_seminar\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
-    marae_file = r'C:\Temp\UC_interv_teaching_seminar\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
+    #contour_file = r'C:\Temp\UC_interv_teaching_seminar\data_test2\NB_shapes\NB_Contour_NB.shp'
+    #coastline_file = r'C:\Temp\UC_interv_teaching_seminar\data_test2\NB_shapes\NB_Coastline_LINZ.shp'
+    #roads_file = r'C:\Temp\UC_interv_teaching_seminar\data_test2\NB_shapes\NB_nz_road_centrelines_topo_150k.shp'
+    #marae_file = r'C:\Temp\UC_interv_teaching_seminar\data_test2\NB_shapes\NB_Marae_NB_UTM.shp'
+    contour_file = r'NB_Contour_NB.shp'
+    coastline_file = r'NB_Coastline_LINZ.shp'
+    roads_file = r'NB_nz_road_centrelines_topo_150k.shp'
+    marae_file = r'NB_Marae_NB_UTM.shp'
 
     # Load the shapefiles
     contour = gpd.read_file(contour_file)
