@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20240904</CreaDate><CreaTime>13400500</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process Name="Clip Layer" ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\GeoAnalytics Desktop Tools.tbx\ClipLayer" Date="20240904" Time="134005">ClipLayer nz-building-outlines nz-coastlines-and-islands-polygons-topo-150k C:\Users\rca114\New_brighton\NB_shapes\NB_nz_building_outlines.shp</Process></lineage></DataProperties></Esri></metadata>
